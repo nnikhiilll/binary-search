@@ -1,0 +1,41 @@
+# main.py
+
+basic=[1,2,3,4,5,6]
+def Binary(basic,n):
+  high=len(basic)-1
+  middle=high//2
+  if high<0:
+    return False
+  if basic[middle]<n:
+    return Binary(basic[middle+1:],n)
+  if basic[middle]>n:
+    return Binary(basic[:middle],n)
+  if basic[middle]==n:
+    return True
+  
+print(Binary(basic,80))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
